@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UI.SettingUi.chatting.SettingChattingActivity">
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/SettingChattingToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:popupTheme="@style/AppTheme.PopupOverlay"
+        />
+    <FrameLayout
+        android:id="@+id/SettingChattingFrame"
+        android:layout_marginTop="@dimen/dim_5xl"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </FrameLayout>
+
+<TextView
+    android:id="@+id/txt"
+    android:layout_marginTop="@dimen/dim_7xl"
+    android:layout_width="match_parent"
+    android:text="الشاشة"
+    android:layout_marginStart="@dimen/dim_l"
+    android:layout_marginEnd="@dimen/dim_l"
+    android:layout_height="@dimen/dim_xl" />
+    <LinearLayout
+        android:id="@+id/SettingChattingColor"
+        android:orientation="horizontal"
+        android:layout_below="@id/txt"
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+        <ImageView
+            android:layout_margin="13dp"
+            android:layout_marginStart="@dimen/dim_l"
+            android:layout_marginEnd="@dimen/dim_l"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@drawable/ic_invert_colors_black_24dp"/>
+        <LinearLayout
+            android:layout_marginTop="6dp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dim_xl"
+                android:text="المظهر"
+                android:textSize="@dimen/dim_l"
+                android:textColor="@color/black"
+                android:layout_marginStart="@dimen/dim_l"
+                android:layout_marginEnd="@dimen/dim_l" />
+            <TextView
+                android:id="@+id/TxtColor"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="فاتح"
+                android:layout_marginStart="@dimen/dim_l"
+                android:layout_marginEnd="@dimen/dim_l"/>
+        </LinearLayout>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginTop="8dp"
+        android:id="@+id/SettingChattingBackgroundColor"
+        android:orientation="horizontal"
+        android:layout_below="@id/SettingChattingColor"
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+    <ImageView
+        android:layout_marginStart="@dimen/dim_l"
+        android:layout_marginEnd="@dimen/dim_l"
+        android:layout_marginTop="10dp"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:src="@drawable/ic_fullscreen_black_24dp"/>
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:layout_marginTop="12dp"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dim_2xl"
+            android:text="خلفية الشاشة"
+            android:textSize="@dimen/dim_l"
+            android:textColor="@color/black"
+            android:layout_marginStart="@dimen/dim_l"
+            android:layout_marginEnd="@dimen/dim_l" />
+    </LinearLayout>
+    </LinearLayout>
+    <TextView
+        android:id="@+id/tintText"
+        android:layout_marginTop="@dimen/dim_l"
+        android:layout_below="@id/SettingChattingBackgroundColor"
+        android:layout_width="match_parent"
+        android:background="@color/gray"
+        android:backgroundTint="@color/gray"
+        android:layout_height="1dp" />
+    <TextView
+        android:id="@+id/settingTxt"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dim_xl"
+        android:layout_below="@id/tintText"
+        android:text="إعدادت الدردشة"
+        android:layout_marginTop="@dimen/dim_xl"
+        android:layout_marginEnd="@dimen/dim_l"
+        android:layout_marginStart="@dimen/dim_l" />
+
+    <LinearLayout
+        android:id="@+id/EnterKeySent"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_below="@id/settingTxt"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="0dp"
+        android:orientation="horizontal">
+
+
+        <LinearLayout
+            android:layout_width="250dp"
+
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dim_xl"
+                android:layout_marginStart="@dimen/dim_3xl"
+                android:layout_marginTop="@dimen/dim_l"
+                android:layout_marginEnd="@dimen/dim_l"
+                android:text="مفتاح الإدخال للإرسال"
+                android:textColor="@color/black"
+                android:textSize="@dimen/dim_l" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dim_xl"
+                android:layout_marginStart="@dimen/dim_3xl"
+                android:layout_marginEnd="@dimen/dim_l"
+                android:text="مفتاح الإدخال سيرسل رسالتك" />
+        </LinearLayout>
+
+        <Switch
+            android:layout_width="60dp"
+            android:layout_height="40dp"
+            android:layout_margin="@dimen/dim_l"
+            android:checked="true" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginTop="8dp"
+        android:id="@+id/ViewMedia"
+        android:layout_below="@id/EnterKeySent"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="250dp"
+            android:layout_height="match_parent">
+            <TextView
+                android:layout_marginTop="@dimen/dim_l"
+                android:layout_marginStart="@dimen/dim_3xl"
+                android:layout_marginEnd="@dimen/dim_l"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dim_xl"
+                android:textSize="@dimen/dim_l"
+                android:textColor="@color/black"
+                android:text="عرض الوسائط"/>
+            <TextView
+                android:layout_marginStart="@dimen/dim_3xl"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="عرض الوسائط التى تم تنزليها حديثاً فى المعرض فى هاتفك"/>
+        </LinearLayout>
+        <Switch
+            android:layout_width="60dp"
+            android:layout_height="40dp"
+            android:layout_margin="@dimen/dim_l"/>
+
+    </LinearLayout>
+
+<LinearLayout
+    android:id="@+id/ChangeSizeLine"
+    android:layout_below="@id/ViewMedia"
+    android:layout_width="match_parent"
+    android:layout_marginTop="@dimen/dim_l"
+    android:layout_height="50dp"
+    android:orientation="vertical"
+    android:layout_marginStart="@dimen/dim_3xl">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dim_xl"
+        android:text="حجم الخط"
+        android:textColor="@color/black"
+        android:textSize="@dimen/dim_l"/>
+    <TextView
+        android:id="@+id/ChangeTxt"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="متوسط"/>
+</LinearLayout>
+    <TextView
+        android:id="@+id/tint1Text"
+        android:layout_marginTop="@dimen/dim_xl"
+        android:layout_below="@id/ChangeSizeLine"
+        android:layout_width="match_parent"
+        android:background="@color/gray"
+        android:backgroundTint="@color/gray"
+        android:layout_height="1dp" />
+
+    <LinearLayout
+        android:id="@+id/save_Chatting_Security"
+        android:layout_below="@+id/tint1Text"
+        android:layout_marginTop="@dimen/dim_xl"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@drawable/ic_backup_black_24dp"
+            android:layout_margin="@dimen/dim_l" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dim_xl"
+            android:textSize="@dimen/dim_l"
+            android:textColor="@color/black"
+            android:layout_margin="@dimen/dim_l"
+            android:text="نسخ إحتياطى للدردشات"/>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/ChatLogs"
+        android:layout_below="@+id/save_Chatting_Security"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@drawable/ic_restore_black_24dp"
+            android:layout_margin="@dimen/dim_l" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dim_xl"
+            android:textSize="@dimen/dim_l"
+            android:textColor="@color/black"
+            android:layout_margin="@dimen/dim_l"
+            android:text="سجلات الدردشة"/>
+    </LinearLayout>
+</RelativeLayout>

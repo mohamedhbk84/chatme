@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UI.HomeUi.StatusFragment">
+
+    <LinearLayout
+        android:id="@+id/add_Status"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dim_8xl"
+        android:orientation="horizontal">
+        <com.mikhaellopez.circularimageview.CircularImageView
+            android:id="@+id/imageViewState"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_margin="@dimen/dim_l"
+            android:src="@mipmap/ic_launcher"/>
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:orientation="vertical">
+           <TextView
+               android:layout_width="match_parent"
+               android:layout_height="@dimen/dim_xl"
+               android:text="حالاتى"
+               android:layout_marginStart="8dp"
+               android:layout_marginTop="14dp"
+               android:layout_marginEnd="8dp"
+               android:textSize="20dp"
+               android:textColor="@color/black"
+               />
+           <TextView
+               android:layout_width="match_parent"
+               android:layout_height="@dimen/dim_xl"
+               android:layout_marginStart="8dp"
+               android:layout_marginEnd="8dp"
+               android:textSize="@dimen/dim_l"
+               android:text="انقر لإضافة  حالة "/>
+       </LinearLayout>
+    </LinearLayout>
+    <TextView
+        android:id="@+id/TextViewStatus"
+        android:text="الحالات الحديثة"
+        android:padding="3dp"
+        android:textSize="@dimen/dim_l"
+        android:background="@color/gray"
+        android:layout_margin="2dp"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dim_2xl"
+        android:layout_below="@id/add_Status"
+        android:backgroundTint="@color/gray"/>
+
+</RelativeLayout>

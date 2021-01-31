@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UI.Location.GPSLocationActivity">
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/settingToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:popupTheme="@style/AppTheme.PopupOverlay"
+        />
+    <TextView
+        android:layout_marginTop="@dimen/dim_6xl"
+        android:id="@+id/Location"
+        android:text="latitude and lonitude"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dim_3xl" />
+    <Button
+        android:id="@+id/btn_GetLocation"
+        android:layout_marginTop="@dimen/dim_3xl"
+        android:layout_centerInParent="true"
+        android:layout_below="@id/Location"
+        android:text="getLocation"
+        android:layout_width="200dp"
+        android:layout_height="@dimen/dim_3xl" />
+
+    <TextView
+        android:layout_marginTop="@dimen/dim_xl"
+        android:layout_width="match_parent"
+        android:layout_marginBottom="@dimen/dim_xl"
+        android:layout_height="1dp"
+        android:layout_below="@id/btn_GetLocation"
+        android:background="@color/gray"
+        android:backgroundTint="@color/gray" />
+    <Button
+        android:id="@+id/RecordLabel"
+        android:layout_marginTop="@dimen/dim_4xl"
+        android:layout_centerInParent="true"
+        android:layout_below="@id/btn_GetLocation"
+        android:text="Hold the record"
+        android:layout_width="200dp"
+        android:layout_height="@dimen/dim_3xl" />
+
+    <TextView
+        android:id="@+id/TextRecord"
+        android:layout_marginTop="@dimen/dim_10xl"
+        android:layout_below="@id/RecordLabel"
+        android:text="Tap and Hold button"
+        android:textSize="@dimen/dim_l"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dim_3xl" />
+</RelativeLayout>

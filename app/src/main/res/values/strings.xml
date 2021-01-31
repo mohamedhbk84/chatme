@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+
+<resources>
+
+    <string name="app_name">ChatMe</string>
+
+    <string name="setting_name">الإعدادت</string>
+    <string name="news">الاخبار</string>
+
+    <string name="Connect_name">تواصل معنا</string>
+
+    <string name="Started_Message_name">الرسائل المميزة بنجمة</string>
+
+    <string name="Setting_Helper_name">المساعدة</string>
+
+    <string name="Setting_Helper">التسجيل واللوكيشن</string>
+
+    <string name="StorageInformation_name">التخزين والبيانات</string>
+
+    <string name="Setting_Profile_name">الملف الشخصى </string>
+    <string name="Setting_Account_name">الحساب </string>
+    <string name="Setting_Chatting_name">الدردشات </string>
+    <string name="SettingChatContactToolbar"> سجلات الدردشات </string>
+    <string name="Setting_alert_name"> الإشعارات </string>
+
+
+    <!-- TODO: Remove or change this placeholder text -->
+
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="signed_in_fmt">SignIn</string>
+
+    <string name="signed_out">SignOut</string>
+
+</resources>

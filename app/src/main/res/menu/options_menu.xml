@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <!--<item android:id="@+id/search_item"-->
+        <!--android:title="Search"-->
+        <!--android:icon="@drawable/ic_search_black_24dp"-->
+        <!--app:showAsAction="always"/>-->
+    <item android:id="@+id/add_item"
+        android:title="addAccount"
+        android:icon="@drawable/ic_person_add_black_24dp"
+        app:showAsAction="always"/>
+    <item android:id="@+id/logOut"
+        android:title="تغير الحساب "
+        />
+
+</menu>

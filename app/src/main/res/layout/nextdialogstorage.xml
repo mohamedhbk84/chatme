@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+ android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="250dp"
+        android:layout_height="200dp"
+        android:layout_centerInParent="true">
+
+        <LinearLayout
+            android:layout_margin="8dp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:text="تنبية:يرجى الانتباه إلى أن التنزيل"
+                android:layout_width="match_parent"
+                android:textSize="@dimen/dim_l"
+                android:textColor="@color/black"
+                android:layout_height="@dimen/dim_2xl" />
+            <TextView
+                android:text="التلقائى لمقاطع الفيديو خلال استعمالك"
+                android:layout_width="match_parent"
+                android:textSize="@dimen/dim_l"
+                android:textColor="@color/black"
+                android:layout_height="@dimen/dim_2xl" />
+            <TextView
+                android:text="خدمة التجوال قد يؤدى إلى رسوم "
+                android:layout_width="match_parent"
+                android:textSize="@dimen/dim_l"
+                android:textColor="@color/black"
+                android:layout_height="@dimen/dim_2xl" />
+            <TextView
+                android:text="تنتمى إليها "
+                android:layout_width="match_parent"
+                android:textSize="@dimen/dim_l"
+                android:textColor="@color/black"
+                android:layout_height="@dimen/dim_2xl" />
+            <TextView
+                android:layout_marginStart="180dp"
+                android:id="@+id/finish_dialog"
+                android:layout_marginTop="@dimen/dim_l"
+                android:text="تم "
+                android:layout_width="40dp"
+                android:textSize="@dimen/dim_l"
+                android:layout_height="@dimen/dim_2xl" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

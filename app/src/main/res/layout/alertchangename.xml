@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="220dp"
+    android:layout_marginTop="300dp">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dim_xl"
+        android:text="أدخل أسمك"
+        android:textColor="@color/black"
+        android:layout_marginStart="@dimen/dim_l"
+        android:layout_marginTop="@dimen/dim_l"
+        android:layout_marginEnd="@dimen/dim_l"
+        android:textSize="@dimen/dim_l"/>
+
+    <LinearLayout
+        android:layout_marginTop="@dimen/dim_xl"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dim_5xl">
+        <ImageView
+            android:id="@+id/getEmotion"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="6dp"
+            android:layout_marginStart="@dimen/dim_l"
+            android:src="@drawable/ic_insert_emoticon_black_24dp"/>
+        <EditText
+            android:id="@+id/getNameEdt"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dim_4xl"
+            android:text="Name"
+            android:inputType="textShortMessage|textAutoCorrect|textCapSentences|textMultiLine"
+            android:imeOptions="actionSend|flagNoEnterAction"
+            android:textColor="@color/black"
+            android:textSize="@dimen/dim_l"
+            android:backgroundTint="@color/green"
+            android:layout_marginStart="@dimen/dim_l"
+            android:layout_marginEnd="@dimen/dim_l"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:textDirection="ltr"
+        android:layout_marginTop="@dimen/dim_xl"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dim_xl"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/TxtSave"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:textSize="@dimen/dim_l"
+            android:text="حفظ"
+            android:layout_marginStart="@dimen/dim_xl"
+            android:layout_marginEnd="@dimen/dim_l"
+            android:gravity="center"/>
+        <TextView
+            android:id="@+id/TxtDontSave"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:textSize="@dimen/dim_l"
+            android:text="إلغاء"
+            android:layout_marginStart="@dimen/dim_xl"
+            android:layout_marginEnd="@dimen/dim_l"
+            android:gravity="center"/>
+
+    </LinearLayout>
+
+</LinearLayout>

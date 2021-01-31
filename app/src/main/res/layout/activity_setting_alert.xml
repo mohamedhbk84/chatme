@@ -1,0 +1,453 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UI.SettingUi.alert.SettingAlertActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbarAlert"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:popupTheme="@style/AppTheme.PopupOverlay"
+        />
+
+<ScrollView
+    android:layout_below="@+id/toolbarAlert"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">x
+    <LinearLayout
+        android:id="@+id/alertMMusic"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_marginTop="@dimen/dim_6xl"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="0dp"
+        android:orientation="horizontal">
+
+
+        <LinearLayout
+            android:layout_width="250dp"
+
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dim_xl"
+                android:layout_marginStart="@dimen/dim_l"
+                android:layout_marginTop="@dimen/dim_l"
+                android:layout_marginEnd="@dimen/dim_l"
+                android:text="نغمة المحادثات"
+                android:textColor="@color/black"
+                android:textSize="@dimen/dim_l" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dim_xl"
+                android:layout_marginStart="@dimen/dim_l"
+                android:layout_marginEnd="@dimen/dim_l"
+                android:text="تشغيل الأصوات للرسائل الواردة والصادرة" />
+        </LinearLayout>
+
+        <Switch
+            android:layout_width="60dp"
+            android:layout_height="40dp"
+            android:layout_margin="@dimen/dim_l"
+            android:checked="true" />
+    </LinearLayout>
+    <TextView
+        android:id="@+id/Txt1"
+        android:layout_marginTop="@dimen/dim_xl"
+        android:layout_below="@id/alertMMusic"
+        android:layout_width="match_parent"
+        android:background="@color/gray"
+        android:backgroundTint="@color/gray"
+        android:layout_height="1dp" />
+   /////////////////////////////////////////////////////////////////////
+    <TextView
+        android:id="@+id/Txt2"
+        android:layout_marginTop="@dimen/dim_l"
+        android:layout_below="@id/Txt1"
+        android:layout_width="match_parent"
+        android:layout_marginStart="@dimen/dim_l"
+        android:layout_marginEnd="@dimen/dim_l"
+        android:layout_height="@dimen/dim_xl"
+        android:text="الرسائل"/>
+
+    <LinearLayout
+        android:id="@+id/LinearAlertMusic"
+        android:layout_width="250dp"
+        android:layout_below="@id/Txt2"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dim_xl"
+            android:layout_marginStart="@dimen/dim_l"
+            android:layout_marginTop="@dimen/dim_l"
+            android:layout_marginEnd="@dimen/dim_l"
+            android:text="نغمة الإشعارات"
+            android:textColor="@color/black"
+            android:textSize="@dimen/dim_l" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dim_xl"
+            android:layout_marginStart="@dimen/dim_l"
+            android:layout_marginEnd="@dimen/dim_l"
+            android:text="الإفتراضية" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/LinearBiberation"
+        android:layout_width="250dp"
+        android:layout_below="@id/LinearAlertMusic"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dim_l"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dim_xl"
+            android:layout_marginStart="@dimen/dim_l"
+            android:layout_marginTop="@dimen/dim_l"
+            android:layout_marginEnd="@dimen/dim_l"
+            android:text="اهتزاز"
+            android:textColor="@color/black"
+            android:textSize="@dimen/dim_l" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dim_xl"
+            android:layout_marginStart="@dimen/dim_l"
+            android:layout_marginEnd="@dimen/dim_l"
+            android:text="الإفتراضي" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/LinearAlertSent"
+        android:layout_width="250dp"
+        android:layout_below="@id/LinearBiberation"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dim_l"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dim_xl"
+            android:layout_marginStart="@dimen/dim_l"
+            android:layout_marginTop="@dimen/dim_l"
+            android:layout_marginEnd="@dimen/dim_l"
+            android:text=" الإشعارات المنبعثة"
+            android:textColor="@color/black"
+            android:textSize="@dimen/dim_l" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dim_xl"
+            android:layout_marginStart="@dimen/dim_l"
+            android:layout_marginEnd="@dimen/dim_l"
+            android:text="إيقاف الرسائل المنبثقة" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/LinearAlertColor"
+        android:layout_width="250dp"
+        android:layout_below="@id/LinearAlertSent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dim_l"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dim_xl"
+            android:layout_marginStart="@dimen/dim_l"
+            android:layout_marginTop="@dimen/dim_l"
+            android:layout_marginEnd="@dimen/dim_l"
+            android:text=" وميض "
+            android:textColor="@color/black"
+            android:textSize="@dimen/dim_l" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dim_xl"
+            android:layout_marginStart="@dimen/dim_l"
+            android:layout_marginEnd="@dimen/dim_l"
+            android:text="أبيض" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/LinearAlertImportant"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_below="@id/LinearAlertColor"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="0dp"
+        android:orientation="horizontal">
+
+
+        <LinearLayout
+            android:layout_width="250dp"
+
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dim_xl"
+                android:layout_marginStart="@dimen/dim_3xl"
+                android:layout_marginTop="@dimen/dim_l"
+                android:layout_marginEnd="@dimen/dim_l"
+                android:text="مفتاح الإدخال للإرسال"
+                android:textColor="@color/black"
+                android:textSize="@dimen/dim_l" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dim_xl"
+                android:layout_marginStart="@dimen/dim_3xl"
+                android:layout_marginEnd="@dimen/dim_l"
+                android:text="مفتاح الإدخال سيرسل رسالتك" />
+        </LinearLayout>
+
+        <Switch
+            android:layout_width="60dp"
+            android:layout_height="40dp"
+            android:layout_margin="@dimen/dim_l"
+            android:checked="true" />
+    </LinearLayout>
+    <TextView
+        android:id="@+id/Txt3"
+        android:layout_marginTop="@dimen/dim_xl"
+        android:layout_below="@id/LinearAlertImportant"
+        android:layout_width="match_parent"
+        android:background="@color/gray"
+        android:backgroundTint="@color/gray"
+        android:layout_height="1dp" />
+    //////////////////////////////////////////////////////////
+    <TextView
+        android:id="@+id/Txt4"
+        android:layout_marginTop="@dimen/dim_l"
+        android:layout_below="@id/Txt3"
+        android:layout_width="match_parent"
+        android:layout_marginStart="@dimen/dim_l"
+        android:layout_marginEnd="@dimen/dim_l"
+        android:layout_height="@dimen/dim_xl"
+        android:text="المجموعات"/>
+
+    <LinearLayout
+        android:id="@+id/LinearAlertMusic2"
+        android:layout_width="250dp"
+        android:layout_below="@id/Txt4"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dim_xl"
+            android:layout_marginStart="@dimen/dim_l"
+            android:layout_marginTop="@dimen/dim_l"
+            android:layout_marginEnd="@dimen/dim_l"
+            android:text="نغمة الإشعارات"
+            android:textColor="@color/black"
+            android:textSize="@dimen/dim_l" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dim_xl"
+            android:layout_marginStart="@dimen/dim_l"
+            android:layout_marginEnd="@dimen/dim_l"
+            android:text="الإفتراضية" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/LinearBiberation2"
+        android:layout_width="250dp"
+        android:layout_below="@id/LinearAlertMusic2"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dim_l"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dim_xl"
+            android:layout_marginStart="@dimen/dim_l"
+            android:layout_marginTop="@dimen/dim_l"
+            android:layout_marginEnd="@dimen/dim_l"
+            android:text="اهتزاز"
+            android:textColor="@color/black"
+            android:textSize="@dimen/dim_l" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dim_xl"
+            android:layout_marginStart="@dimen/dim_l"
+            android:layout_marginEnd="@dimen/dim_l"
+            android:text="الإفتراضي" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/LinearAlertSent2"
+        android:layout_width="250dp"
+        android:layout_below="@id/LinearBiberation2"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dim_l"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dim_xl"
+            android:layout_marginStart="@dimen/dim_l"
+            android:layout_marginTop="@dimen/dim_l"
+            android:layout_marginEnd="@dimen/dim_l"
+            android:text=" الإشعارات المنبعثة"
+            android:textColor="@color/black"
+            android:textSize="@dimen/dim_l" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dim_xl"
+            android:layout_marginStart="@dimen/dim_l"
+            android:layout_marginEnd="@dimen/dim_l"
+            android:text="إيقاف الرسائل المنبثقة" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/LinearAlertColor2"
+        android:layout_width="250dp"
+        android:layout_below="@id/LinearAlertSent2"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dim_l"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dim_xl"
+            android:layout_marginStart="@dimen/dim_l"
+            android:layout_marginTop="@dimen/dim_l"
+            android:layout_marginEnd="@dimen/dim_l"
+            android:text=" وميض "
+            android:textColor="@color/black"
+            android:textSize="@dimen/dim_l" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dim_xl"
+            android:layout_marginStart="@dimen/dim_l"
+            android:layout_marginEnd="@dimen/dim_l"
+            android:text="أبيض" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/LinearAlertImportant2"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_below="@id/LinearAlertColor2"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="0dp"
+        android:orientation="horizontal">
+
+
+        <LinearLayout
+            android:layout_width="250dp"
+
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dim_xl"
+                android:layout_marginStart="@dimen/dim_3xl"
+                android:layout_marginTop="@dimen/dim_l"
+                android:layout_marginEnd="@dimen/dim_l"
+                android:text="مفتاح الإدخال للإرسال"
+                android:textColor="@color/black"
+                android:textSize="@dimen/dim_l" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dim_xl"
+                android:layout_marginStart="@dimen/dim_3xl"
+                android:layout_marginEnd="@dimen/dim_l"
+                android:text="مفتاح الإدخال سيرسل رسالتك" />
+        </LinearLayout>
+
+        <Switch
+            android:layout_width="60dp"
+            android:layout_height="40dp"
+            android:layout_margin="@dimen/dim_l"
+            android:checked="true" />
+    </LinearLayout>
+    <TextView
+        android:id="@+id/Txt6"
+        android:layout_marginTop="@dimen/dim_xl"
+        android:layout_below="@id/LinearAlertImportant2"
+        android:layout_width="match_parent"
+        android:background="@color/gray"
+        android:backgroundTint="@color/gray"
+        android:layout_height="1dp" />
+/////////////////////////////////////////////////
+    <TextView
+        android:id="@+id/Txt7"
+        android:layout_marginTop="@dimen/dim_l"
+        android:layout_below="@id/Txt6"
+        android:layout_width="match_parent"
+        android:layout_marginStart="@dimen/dim_l"
+        android:layout_marginEnd="@dimen/dim_l"
+        android:layout_height="@dimen/dim_xl"
+        android:text="المكالمات"/>
+
+    <LinearLayout
+        android:id="@+id/LinearAlertMusic3"
+        android:layout_width="250dp"
+        android:layout_below="@id/Txt7"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dim_xl"
+            android:layout_marginStart="@dimen/dim_l"
+            android:layout_marginTop="@dimen/dim_l"
+            android:layout_marginEnd="@dimen/dim_l"
+            android:text="نغمة الرنين"
+            android:textColor="@color/black"
+            android:textSize="@dimen/dim_l" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dim_xl"
+            android:layout_marginStart="@dimen/dim_l"
+            android:layout_marginEnd="@dimen/dim_l"
+            android:text="(ringto_012)الإفتراضية" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/LinearBiberation3"
+        android:layout_width="250dp"
+        android:layout_below="@id/LinearAlertMusic3"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dim_l"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dim_xl"
+            android:layout_marginStart="@dimen/dim_l"
+            android:layout_marginTop="@dimen/dim_l"
+            android:layout_marginEnd="@dimen/dim_l"
+            android:text="اهتزاز"
+            android:textColor="@color/black"
+            android:textSize="@dimen/dim_l" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dim_xl"
+            android:layout_marginStart="@dimen/dim_l"
+            android:layout_marginEnd="@dimen/dim_l"
+            android:layout_marginBottom="@dimen/dim_2xl"
+            android:text="الإفتراضي" />
+    </LinearLayout>
+    </RelativeLayout>
+</ScrollView>
+</RelativeLayout>

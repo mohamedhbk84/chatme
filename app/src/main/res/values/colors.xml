@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+
+    <color name="colorPrimaryDark">#00574B</color>
+
+    <color name="colorAccent">#D81B60</color>
+
+    <color name="yourColorTitle">#ffff</color>
+
+    <color name="yourColorItem">#DFD7D7</color>
+
+
+    <color name="gray">#dfdfdf</color>
+
+    <color name="blue">#2f3f51</color>
+
+    <color name="toolbar">#fafafa</color>
+
+
+
+    <color name="tab_background_selected">#2f3f51</color>
+
+    <color name="tab_background_unselected">#FFFFFF</color>
+
+    <color name="Linear_color">#FCF6F6</color>
+    <color name="Linear_color1">#F5EAEA</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="green">#018b06</color>
+    <color name="green_dark">#003300</color>
+    <color name="green_light">#A5D6A7</color>
+
+    <color name="blue_dark">#005B9F</color>
+    <color name="blue_light">#81D4FA</color>
+
+
+
+    ///////////////////////////
+    <color name="primary_green">#52bf90</color>
+    <color name="primary_dark_green">#398564</color>
+    <color name="accent_green">#FF4081</color>
+    <color name="activity_bg">#e4e5e5</color>
+    <color name="primary_purple">#673AB7</color>
+    <color name="primary_dark_purple">#512DA8</color>
+    <color name="primary_light">#D1C4E9</color>
+    <color name="accent_purple">#FF9800</color>
+    <color name="primary_text">#212121</color>
+    <color name="secondary_text">#727272</color>
+    <color name="icons">#FFFFFF</color>
+    <color name="divider">#B6B6B6</color>
+    <color name="activity_bg_black">#374046</color>
+
+</resources>

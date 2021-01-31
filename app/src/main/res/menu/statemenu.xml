@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/state_connect_us_item"
+        android:title="خصوصية الحالة" />
+    <item android:id="@+id/state_upload_item"
+        android:title="الاعدادت" />
+</menu>

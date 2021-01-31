@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UI.SettingUi.StorageInformationActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/StorageInformationToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:popupTheme="@style/AppTheme.PopupOverlay"
+        />
+    <FrameLayout
+        android:id="@+id/StorageInformationFrame"
+        android:layout_below="@+id/toolbar1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </FrameLayout>
+    <LinearLayout
+        android:layout_below="@id/StorageInformationToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <LinearLayout
+            android:background="@color/Linear_color"
+            android:id="@+id/manageAccount_Setting"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dim_7xl"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/dim_2xl"
+                android:layout_marginTop="@dimen/dim_xl"
+                android:layout_marginStart="@dimen/dim_xl"
+                android:layout_marginEnd="@dimen/dim_l"
+                android:src="@drawable/ic_storage_black_24dp" />
+            <LinearLayout
+                android:textDirection="rtl"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <TextView
+                    android:text="إدارة التخزين"
+                    android:textSize="@dimen/dim_l"
+                    android:textColor="#000000"
+                    android:layout_marginTop="@dimen/dim_l"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dim_xl" />
+                <TextView
+                    android:text="138,1 ميغا بايت "
+                    android:textSize="@dimen/dim_l"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dim_2xl" />
+
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/UsedNetwork_Setting"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dim_7xl"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/dim_2xl"
+                android:layout_marginTop="@dimen/dim_xl"
+                android:layout_marginStart="@dimen/dim_xl"
+                android:layout_marginEnd="@dimen/dim_l"
+                android:src="@drawable/ic_dataaa_usage_black_24dp" />
+            <LinearLayout
+                android:background="@color/Linear_color"
+                android:textDirection="rtl"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <TextView
+                    android:text="إستخدام الشبكة "
+                    android:textSize="@dimen/dim_l"
+                    android:textColor="#000000"
+                    android:layout_marginTop="@dimen/dim_l"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dim_xl" />
+                <TextView
+                    android:text="تم إرسال79,4 ميغابايت - تم إستلام 371,1 ميغ ... "
+                    android:textSize="@dimen/dim_l"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dim_2xl" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:background="@color/Linear_color"
+            android:id="@+id/StorageInformationSwitch"
+            android:layout_marginTop="@dimen/dim_l"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:orientation="horizontal">
+
+            <Switch
+                android:layout_width="81dp"
+                android:layout_height="30dp"
+                android:layout_marginStart="4dp"
+                android:layout_marginEnd="4dp"
+                android:layout_weight="1"></Switch>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dim_2xl"
+                android:layout_weight="3"
+                android:text="التوفير فى حجم البيانات"
+                android:textColor="#000000"
+                android:textSize="@dimen/dim_l" />
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:background="@color/Linear_color"
+            android:textDirection="rtl"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_marginTop="@dimen/dim_xl"
+            android:layout_marginStart="@dimen/dim_6xl"
+            android:layout_marginEnd="@dimen/dim_l"
+            android:layout_height="@dimen/dim_6xl">
+            <TextView
+                android:text="التنزيل التلقائى للوسائط "
+                android:textSize="@dimen/dim_l"
+                android:layout_marginTop="@dimen/dim_l"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dim_xl" />
+            <TextView
+                android:text="يتم تنزيل الرسائل الصوتية تلقائيا دائماً "
+                android:textSize="@dimen/dim_l"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dim_2xl" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/used_data_phone"
+            android:background="@color/Linear_color"
+            android:textDirection="rtl"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_marginTop="@dimen/dim_xl"
+            android:layout_marginStart="@dimen/dim_6xl"
+            android:layout_marginEnd="@dimen/dim_l"
+            android:layout_height="@dimen/dim_6xl">
+            <TextView
+                android:text="أثناء إستخدام بيانات المحمول "
+                android:textSize="@dimen/dim_l"
+                android:textColor="#000000"
+                android:layout_marginTop="@dimen/dim_l"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dim_xl" />
+            <TextView
+                android:text="الصور "
+                android:textSize="@dimen/dim_l"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dim_2xl" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/used_WiFi_phone"
+            android:background="@color/Linear_color"
+            android:textDirection="rtl"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_marginTop="@dimen/dim_xl"
+            android:layout_marginStart="@dimen/dim_6xl"
+            android:layout_marginEnd="@dimen/dim_l"
+            android:layout_height="@dimen/dim_6xl">
+            <TextView
+                android:text="أثناء الإتصال بشبكة Wi-Fi  "
+                android:textSize="@dimen/dim_l"
+                android:textColor="#000000"
+                android:layout_marginTop="@dimen/dim_l"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dim_xl" />
+            <TextView
+                android:text="جميع الوسائط "
+                android:textSize="@dimen/dim_l"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dim_2xl" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/between_Call"
+            android:textDirection="rtl"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_marginTop="@dimen/dim_xl"
+            android:background="@color/Linear_color"
+            android:layout_marginStart="@dimen/dim_6xl"
+            android:layout_marginEnd="@dimen/dim_l"
+            android:layout_height="@dimen/dim_6xl">
+            <TextView
+                android:text="أثناء التجوال "
+                android:textSize="@dimen/dim_l"
+                android:textColor="#000000"
+                android:layout_marginTop="@dimen/dim_l"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dim_xl" />
+            <TextView
+                android:text="الصور , المقاطع الصوتية , مقاطع الفيديو "
+                android:textSize="@dimen/dim_l"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dim_2xl" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+
+
+</RelativeLayout>
+

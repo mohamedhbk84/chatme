@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/text_dialog"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:textColor="@color/black"
+        android:textSize="@dimen/dim_l"
+        android:text="أثناء التجول"/>
+
+    <CheckBox
+        android:background="@color/Linear_color"
+        android:id="@+id/checkbox_photo"
+        android:layout_marginTop="@dimen/dim_l"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:text="الصور" />
+    <CheckBox
+        android:background="@color/Linear_color"
+        android:id="@+id/checkbox_sound"
+        android:layout_marginTop="@dimen/dim_l"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:text="المقاطع الصوتية" />
+    <CheckBox
+        android:background="@color/Linear_color"
+        android:id="@+id/checkbox_video"
+        android:layout_marginTop="@dimen/dim_l"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:text="مقاطع الفديو" />
+    <CheckBox
+
+        android:background="@color/Linear_color"
+        android:id="@+id/checkbox_paper"
+        android:layout_marginTop="@dimen/dim_l"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:text="المستندات" />
+    <LinearLayout
+        android:layout_marginTop="@dimen/dim_l"
+        android:textDirection="rtl"
+        android:background="@color/Linear_color"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dim_3xl">
+        <TextView
+            android:id="@+id/dialog_Text_finish"
+            android:layout_width="40dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="@dimen/dim_2xl"
+            android:text="تم"
+            android:textSize="@dimen/dim_l"
+            android:layout_marginLeft="@dimen/dim_2xl" />
+        <TextView
+            android:id="@+id/dialog_Text_dec"
+            android:layout_width="40dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="@dimen/dim_2xl"
+            android:text="إلغاء"
+            android:textSize="@dimen/dim_l"
+            android:layout_marginLeft="@dimen/dim_2xl" />
+    </LinearLayout>
+
+</LinearLayout>
+
+

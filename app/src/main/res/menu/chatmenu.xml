@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/new_group_item"
+        android:title=" ملاحظات" />
+    <item android:id="@+id/private_message_item"
+        android:title="الرسائل المميزة" />
+    <item android:id="@+id/connect_us_item"
+        android:title="التواصل معنا" />
+    <item android:id="@+id/upload_item"
+        android:title="الاعدادت" />
+    <item android:id="@+id/location_item"
+        android:title="تسجيل الصوت والموقع" />
+</menu>

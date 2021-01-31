@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UI.ReplaceActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:popupTheme="@style/AppTheme.PopupOverlay"
+        />
+    <FrameLayout
+        android:id="@+id/Frame_layout"
+        android:layout_below="@+id/toolbar1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </FrameLayout>
+    <ScrollView
+        android:layout_marginTop="@dimen/dim_6xl"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_below="@id/toolbar1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <LinearLayout
+                android:id="@+id/setting_profile"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dim_11xl"
+                android:orientation="horizontal">
+                <com.mikhaellopez.circularimageview.CircularImageView
+                    android:id="@+id/circularImageView"
+                    android:layout_margin="@dimen/dim_l"
+                    android:layout_width="100dp"
+                    android:layout_height="@dimen/dim_8xl"
+                    android:src="@drawable/icon12x"
+                    app:civ_border_color="#3f51b5"
+                    app:civ_border_width="4dp"
+                    app:civ_shadow="true"
+                    app:civ_shadow_radius="10dp"
+                    app:civ_shadow_color="#3f51b5"
+                    />
+                <LinearLayout
+                    android:textDirection="rtl"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <TextView
+                        android:id="@+id/ReplaceTxt"
+                        android:text="smile"
+                        android:textSize="@dimen/dim_xl"
+                        android:textColor="#000000"
+                        android:layout_marginTop="@dimen/dim_xl"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dim_2xl" />
+                    <TextView
+                        android:text="Hey there I am usging"
+                        android:textSize="@dimen/dim_l"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dim_5xl" />
+
+                </LinearLayout>
+            </LinearLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:backgroundTint="@color/gray"
+                android:background="@color/gray"/>
+            <LinearLayout
+                android:id="@+id/setting_account"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dim_8xl"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/dim_2xl"
+                    android:layout_marginTop="@dimen/dim_2xl"
+                    android:layout_marginStart="@dimen/dim_xl"
+                    android:layout_marginEnd="@dimen/dim_l"
+                    android:src="@drawable/ic_account_circle_black_24dp" />
+                <LinearLayout
+                    android:textDirection="rtl"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <TextView
+                        android:text="الحساب"
+                        android:textSize="@dimen/dim_l"
+                        android:textColor="#000000"
+                        android:layout_marginTop="@dimen/dim_xl"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dim_xl" />
+                    <TextView
+                        android:text="الخصوصية, الأمان , تغير الرقم "
+                        android:textSize="@dimen/dim_l"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dim_5xl" />
+
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/setting_chatting"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dim_10xl"
+                android:orientation="horizontal">
+                <ImageView
+                    android:layout_marginTop="@dimen/dim_3xl"
+                    android:layout_marginStart="@dimen/dim_xl"
+                    android:layout_marginEnd="@dimen/dim_l"
+                    android:layout_width="30dp"
+                    android:layout_height="@dimen/dim_2xl"
+                    android:src="@drawable/ic_chat_black_24dp"/>
+                <LinearLayout
+                    android:textDirection="rtl"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <TextView
+                        android:text="الدردشات"
+                        android:textSize="@dimen/dim_l"
+                        android:textColor="#000000"
+                        android:layout_marginTop="@dimen/dim_2xl"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dim_2xl" />
+                    <TextView
+                        android:text="المظهر, خلفيات الشاشة , سجلات الدردشة "
+                        android:textSize="@dimen/dim_l"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dim_5xl" />
+
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/setting_alert"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dim_10xl"
+                android:orientation="horizontal">
+                <ImageView
+                    android:layout_marginTop="@dimen/dim_3xl"
+                    android:layout_marginStart="@dimen/dim_xl"
+                    android:layout_marginEnd="@dimen/dim_l"
+                    android:layout_width="30dp"
+                    android:layout_height="@dimen/dim_2xl"
+                    android:src="@drawable/ic_add_alert_black_24dp"/>
+                <LinearLayout
+                    android:textDirection="rtl"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <TextView
+                        android:text="الاشعارات"
+                        android:textSize="@dimen/dim_l"
+                        android:textColor="#000000"
+                        android:layout_marginTop="@dimen/dim_2xl"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dim_2xl" />
+                    <TextView
+                        android:text=" نعمات الرسالة والمجموعة والمكالمات "
+                        android:textSize="@dimen/dim_l"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dim_5xl" />
+
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/setting_data_storage"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dim_10xl"
+                android:orientation="horizontal">
+                <ImageView
+                    android:layout_marginTop="@dimen/dim_3xl"
+                    android:layout_marginStart="@dimen/dim_xl"
+                    android:layout_marginEnd="@dimen/dim_l"
+                    android:layout_width="30dp"
+                    android:layout_height="@dimen/dim_2xl"
+                    android:src="@drawable/ic_data_usage_black_24dp"/>
+                <LinearLayout
+                    android:textDirection="rtl"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <TextView
+                        android:text="التخزين والبيانات"
+                        android:textSize="@dimen/dim_l"
+                        android:textColor="#000000"
+                        android:layout_marginTop="@dimen/dim_2xl"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dim_2xl" />
+                    <TextView
+                        android:text="إستعمال الشبكة , التنزيل التلقائى "
+                        android:textSize="@dimen/dim_l"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dim_5xl" />
+
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/setting_help"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dim_10xl"
+                android:orientation="horizontal">
+                <ImageView
+                    android:layout_marginTop="@dimen/dim_3xl"
+                    android:layout_marginStart="@dimen/dim_xl"
+                    android:layout_marginEnd="@dimen/dim_l"
+                    android:layout_width="30dp"
+                    android:layout_height="@dimen/dim_2xl"
+                    android:src="@drawable/ic_help_black_24dp"/>
+                <LinearLayout
+                    android:textDirection="rtl"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <TextView
+                        android:text="المساعدة"
+                        android:textSize="@dimen/dim_l"
+                        android:textColor="#000000"
+                        android:layout_marginTop="@dimen/dim_2xl"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dim_2xl" />
+                    <TextView
+                        android:text="اتصل بنا , سياسة الخصوصية "
+                        android:textSize="@dimen/dim_l"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dim_5xl" />
+
+                </LinearLayout>
+            </LinearLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:backgroundTint="@color/gray"
+                android:background="@color/gray" />
+            <LinearLayout
+                android:id="@+id/invite_Friend_Layout"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dim_8xl"
+                android:orientation="horizontal">
+                <ImageView
+                    android:layout_marginTop="@dimen/dim_xl"
+                    android:layout_marginStart="@dimen/dim_xl"
+                    android:layout_marginEnd="@dimen/dim_l"
+                    android:layout_width="30dp"
+                    android:layout_height="@dimen/dim_2xl"
+                    android:src="@drawable/ic_insert_invitation_black_24dp"/>
+                <LinearLayout
+                    android:textDirection="rtl"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <TextView
+                        android:text="دعوة صديق"
+                        android:textSize="@dimen/dim_l"
+                        android:textColor="#000000"
+                        android:layout_marginTop="@dimen/dim_xl"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dim_2xl" />
+
+                </LinearLayout>
+            </LinearLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dim_2xl"
+                android:text="from"
+                android:gravity="center"
+                android:layout_gravity="center"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dim_2xl"
+                android:textSize="@dimen/dim_l"
+                android:textColor="#000000"
+                android:gravity="center"
+                android:text="member chatMe"
+                android:layout_gravity="center"/>
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

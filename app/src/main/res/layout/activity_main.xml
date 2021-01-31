@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+    <androidx.appcompat.widget.Toolbar
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        app:popupTheme="@style/AppTheme.PopupOverlay"
+        android:theme="?attr/actionBarTheme"
+        android:minHeight="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        android:id="@+id/toolbar">
+        <com.mikhaellopez.circularimageview.CircularImageView
+            android:id="@+id/ImageProfile"
+            android:layout_width="25dp"
+            android:layout_height="25dp" />
+        <TextView
+            android:id="@+id/UserNameProfile"
+            android:layout_width="@dimen/dim_7xl"
+            android:layout_height="@dimen/dim_xl"
+            android:gravity="center"
+            />
+    </androidx.appcompat.widget.Toolbar>
+
+    <com.google.android.material.tabs.TabLayout
+        android:layout_height="40dp"
+        android:layout_width="match_parent"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        android:minHeight="?attr/actionBarSize"
+        android:background="@color/colorPrimary"
+        android:id="@+id/TabLayout"
+        app:tabPaddingStart="25dp"
+        app:tabMode="fixed"
+        app:tabIndicator="@drawable/tabe_line"
+        app:tabInlineLabel="true"
+        app:tabIndicatorColor="#E67C7C"
+        android:elevation="6dp"
+        app:tabGravity="fill">
+
+    </com.google.android.material.tabs.TabLayout>
+
+
+    <androidx.viewpager.widget.ViewPager
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:id="@+id/ViewPagerHome"
+        android:layout_margin="8dp">
+    </androidx.viewpager.widget.ViewPager>
+
+</LinearLayout>
+

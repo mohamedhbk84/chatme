@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UI.SettingUi.Profile.SettingProfileActivity">
+
+    <!--<androidx.appcompat.widget.Toolbar-->
+        <!--android:id="@+id/SettingProfileToolbar"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:background="?attr/colorPrimary"-->
+        <!--android:minHeight="?attr/actionBarSize"-->
+        <!--android:theme="?attr/actionBarTheme"-->
+        <!--app:popupTheme="@style/AppTheme.PopupOverlay"-->
+        <!--/>-->
+    <!--<FrameLayout-->
+        <!--android:id="@+id/SettingProfileFrame"-->
+        <!--android:layout_below="@+id/SettingProfileToolbar"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"></FrameLayout>-->
+
+    <!--<LinearLayout-->
+        <!--android:layout_marginTop="@dimen/dim_6xl"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:gravity="center"-->
+        <!--android:layout_height="180dp">-->
+        <!--<FrameLayout-->
+            <!--android:layout_width="230dp"-->
+            <!--android:layout_height="180dp"-->
+            <!--android:layout_centerInParent="true"-->
+            <!--android:layout_gravity="center">-->
+            <!--<com.mikhaellopez.circularimageview.CircularImageView-->
+                <!--android:id="@+id/profilePic"-->
+                <!--android:background="@drawable/icon12x"-->
+                <!--android:layout_width="170dp"-->
+                <!--android:layout_height="170dp"-->
+                <!--android:layout_gravity="center|center_horizontal" />-->
+            <!--<androidx.cardview.widget.CardView-->
+                <!--android:id="@+id/CardView"-->
+                <!--android:layout_width="80dp"-->
+                <!--android:layout_height="80dp"-->
+                <!--android:layout_gravity="bottom|left"-->
+                <!--app:cardBackgroundColor="@color/colorPrimary"-->
+                <!--android:adjustViewBounds="true"-->
+                <!--app:cardCornerRadius="100dp">-->
+                <!--<ImageView-->
+                    <!--android:layout_width="40dp"-->
+                    <!--android:layout_height="40dp"-->
+                    <!--android:layout_gravity="center"-->
+                    <!--android:src="@drawable/ic_photo_camera_black_24dp"-->
+                    <!--/>-->
+
+                <!--&lt;!&ndash;<com.mikhaellopez.circularimageview.CircularImageView&ndash;&gt;-->
+                <!--&lt;!&ndash;android:id="@+id/iv_camera"&ndash;&gt;-->
+                <!--&lt;!&ndash;android:layout_marginTop="6dp"&ndash;&gt;-->
+                <!--&lt;!&ndash;android:layout_marginStart="6dp"&ndash;&gt;-->
+                <!--&lt;!&ndash;android:layout_width="80dp"&ndash;&gt;-->
+                <!--&lt;!&ndash;android:layout_height="80dp"&ndash;&gt;-->
+                <!--&lt;!&ndash;android:layout_gravity="center"&ndash;&gt;-->
+                <!--&lt;!&ndash;android:src="@color/colorAccent"&ndash;&gt;-->
+                <!--&lt;!&ndash;android:background="@drawable/ic_small_photo_camera_black_24dp" />&ndash;&gt;-->
+            <!--</androidx.cardview.widget.CardView>-->
+        <!--</FrameLayout>-->
+
+
+    <!--</LinearLayout>-->
+
+</RelativeLayout>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UI.SettingUi.chatting.Message_Activity">
+    <androidx.appcompat.widget.Toolbar
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:theme="?attr/actionBarTheme"
+        android:minHeight="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        android:id="@+id/toolbar2">
+        <com.mikhaellopez.circularimageview.CircularImageView
+            android:id="@+id/ImageProfile1"
+            android:layout_width="25dp"
+            android:layout_height="25dp" />
+        <TextView
+            android:id="@+id/UserNameProfile1"
+            android:layout_width="@dimen/dim_7xl"
+            android:layout_height="@dimen/dim_xl"
+            android:gravity="center" />
+
+    </androidx.appcompat.widget.Toolbar>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/RecycleMessage"
+        android:layout_margin="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/toolbar2"
+        android:layout_above="@id/rv">
+
+    </androidx.recyclerview.widget.RecyclerView>
+   <RelativeLayout
+       android:id="@+id/rv"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:padding="5dp"
+        android:layout_margin="6dp"
+       android:background="@drawable/background_chat"
+       android:layout_alignParentBottom="true">
+
+       <EditText
+           android:id="@+id/textSend"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_alignParentLeft="true"
+           android:layout_centerVertical="true"
+           android:hint="type a message ....."
+           android:layout_marginStart="@dimen/dim_3xl"
+           android:textSize="20dp"
+           android:padding="8dp"
+           android:background="@drawable/background_left"/>
+       <ImageButton
+           android:layout_width="40dp"
+           android:layout_height="40dp"
+           android:id="@+id/btnSend"
+           android:layout_alignParentStart="true"
+           android:layout_alignParentRight="true"
+           android:background="@drawable/chat_botton"
+           android:src="@drawable/ic_send_black_24dp"
+           />
+   </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UI.SettingUi.Profile.ProfileSettingActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/SettingProfileToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:popupTheme="@style/AppTheme.PopupOverlay"
+        />
+    <FrameLayout
+        android:id="@+id/SettingProfileFrame"
+        android:layout_below="@+id/SettingProfileToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/l"
+        android:layout_marginTop="@dimen/dim_6xl"
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:layout_height="180dp">
+        <FrameLayout
+            android:layout_width="230dp"
+            android:layout_height="180dp"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center">
+            <com.mikhaellopez.circularimageview.CircularImageView
+                android:id="@+id/profilePic"
+                android:background="@drawable/icon12x"
+                android:layout_width="170dp"
+                android:layout_height="170dp"
+                android:layout_gravity="center|center_horizontal" />
+            <com.mikhaellopez.circularimageview.CircularImageView
+                android:id="@+id/ImageCard"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_gravity="bottom|left"
+                android:src="@drawable/background3"/>
+                <!--android:adjustViewBounds="true"-->
+                <!--app:cardCornerRadius="100dp">-->
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="125dp"
+                android:layout_marginStart="164dp"
+                android:src="@drawable/ic_small_photo_camera_black_24dp" />
+        </FrameLayout>
+    </LinearLayout>
+    <LinearLayout
+
+        android:layout_marginTop="@dimen/dim_3xl"
+        android:id="@+id/edit_Name"
+        android:layout_below="@id/l"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="110dp">
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:background="@drawable/ic_person_black_24dp"
+            android:layout_marginEnd="@dimen/dim_l"
+            android:layout_marginStart="@dimen/dim_l"
+            android:layout_marginTop="10dp"
+            />
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:layout_marginEnd="@dimen/dim_xl"
+                android:drawableEnd="@drawable/ic_edit_black_24dp"
+                android:textSize="12dp"
+                android:textColor="@color/authui_colorPrimaryDark"
+                android:text="الاسـم"
+                android:layout_width="match_parent"
+                android:layout_height="20dp" />
+            <TextView
+                android:id="@+id/Profile_Setting_Name"
+                android:text="Smile"
+                android:textDirection="rtl"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dim_2xl"
+                android:textSize="18dp"
+                android:textColor="@color/black"/>
+            <TextView
+                android:text="هذا ليس كلمة مرور أو رقم التعريف . يكون هذا الاسم ظاهراً لجهات اتصالك فى الواتساب"
+                android:textColor="@color/authui_colorPrimaryDark"
+                android:textSize="16dp"
+                android:layout_marginLeft="8dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+    <TextView
+        android:layout_margin="4dp"
+        android:id="@+id/profile1"
+        android:layout_below="@id/edit_Name"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/gray"
+        android:backgroundTint="@color/gray"/>
+    <LinearLayout
+        android:id="@+id/edit_stautes"
+        android:layout_below="@id/profile1"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="80dp">
+<ImageView
+    android:layout_width="25dp"
+    android:layout_height="25dp"
+    android:background="@drawable/ic_help_black_24dp"
+    android:layout_marginEnd="@dimen/dim_l"
+    android:layout_marginStart="@dimen/dim_l"
+    android:layout_marginTop="26dp"/>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_marginTop="@dimen/dim_l"
+            android:layout_marginEnd="@dimen/dim_xl"
+            android:drawableEnd="@drawable/ic_edit_black_24dp"
+            android:textSize="12dp"
+            android:textColor="@color/authui_colorPrimaryDark"
+            android:text="الاخبار"
+            android:layout_width="match_parent"
+            android:layout_height="20dp" />
+        <TextView
+            android:id="@+id/ProfileNews"
+            android:text="متوفر"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dim_2xl"
+            android:textSize="18dp"
+            android:textColor="@color/black"/>
+
+
+    </LinearLayout>
+
+    </LinearLayout>
+    <TextView
+        android:layout_margin="4dp"
+        android:id="@+id/profile2"
+        android:layout_below="@id/edit_stautes"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/gray"
+        android:backgroundTint="@color/gray"/>
+    <LinearLayout
+        android:id="@+id/edit_phone"
+        android:layout_below="@id/profile2"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="80dp">
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:background="@drawable/ic_phone_black_24dp"
+            android:layout_marginEnd="@dimen/dim_l"
+            android:layout_marginStart="@dimen/dim_l"
+            android:layout_marginTop="26dp"/>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_marginTop="@dimen/dim_l"
+                android:layout_marginEnd="8dp"
+                android:textSize="12dp"
+                android:textColor="@color/authui_colorPrimaryDark"
+                android:text="الهاتف"
+                android:layout_width="match_parent"
+                android:layout_height="20dp" />
+            <TextView
+                android:text="01559606577"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dim_2xl"
+                android:textDirection="rtl"
+                android:textSize="18dp"
+                android:textColor="@color/black"/>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UI.SettingUi.Profile.SituationNewsActivity">
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar11"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:popupTheme="@style/AppTheme.PopupOverlay" />
+    <LinearLayout
+        android:id="@+id/LL1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@+id/toolbar11">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dim_2xl"
+            android:layout_marginTop="@dimen/dim_xl"
+            android:layout_marginStart="@dimen/dim_xl"
+            android:layout_marginEnd="@dimen/dim_xl"
+            android:text="خبرك الحالى"/>
+        <TextView
+            android:id="@+id/Text1111"
+            android:layout_marginEnd="@dimen/dim_xl"
+            android:layout_marginStart="@dimen/dim_xl"
+            android:layout_marginBottom="@dimen/dim_l"
+            android:drawableEnd="@drawable/ic_edit_black_24dp"
+            android:textSize="@dimen/dim_l"
+            android:textColor="@color/black"
+            android:text="متوفر"
+            android:layout_width="match_parent"
+            android:layout_height="20dp" />
+    </LinearLayout>
+    <TextView
+        android:id="@+id/TxtLL"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/gray"
+        android:backgroundTint="@color/gray"
+        android:layout_below="@id/LL1"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="@dimen/dim_xl" />
+    <TextView
+        android:id="@+id/NewsTxt"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dim_xl"
+        android:text="اختر الأخبار"
+        android:layout_marginBottom="@dimen/dim_l"
+        android:layout_marginStart="@dimen/dim_xl"
+        android:layout_below="@id/TxtLL"/>
+    <ScrollView
+        android:layout_below="@id/NewsTxt"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:id="@+id/Text1"
+            android:text="متوفر"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dim_3xl"
+           android:layout_marginTop="18dp"
+            android:textColor="@color/black"
+            android:layout_marginStart="@dimen/dim_xl"
+            android:layout_marginEnd="18dp"/>
+        <TextView
+            android:id="@+id/Text2"
+            android:text="مشغول"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dim_3xl"
+            android:layout_marginTop="18dp"
+            android:textColor="@color/black"
+            android:layout_marginStart="@dimen/dim_xl"
+            android:layout_marginEnd="18dp"/>
+        <TextView
+            android:id="@+id/Text3"
+            android:text="فى الخارج"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dim_3xl"
+            android:layout_marginTop="18dp"
+            android:textColor="@color/black"
+            android:layout_marginStart="@dimen/dim_xl"
+            android:layout_marginEnd="18dp"/>
+        <TextView
+            android:id="@+id/Text4"
+            android:text="فى المدرسة"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dim_3xl"
+            android:layout_marginTop="18dp"
+            android:textColor="@color/black"
+            android:layout_marginStart="@dimen/dim_xl"
+            android:layout_marginEnd="18dp"/>
+        <TextView
+            android:id="@+id/Text5"
+            android:text="فى العمل"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dim_3xl"
+            android:layout_marginTop="18dp"
+            android:textColor="@color/black"
+            android:layout_marginStart="@dimen/dim_xl"
+            android:layout_marginEnd="18dp"/>
+        <TextView
+            android:id="@+id/Text6"
+            android:text="فى إجتماع"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dim_3xl"
+            android:layout_marginTop="18dp"
+            android:textColor="@color/black"
+            android:layout_marginStart="@dimen/dim_xl"
+            android:layout_marginEnd="18dp"/>
+        <TextView
+            android:id="@+id/Text7"
+            android:text="فى النادى الرياضى"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dim_3xl"
+            android:layout_marginTop="18dp"
+            android:textColor="@color/black"
+            android:layout_marginStart="@dimen/dim_xl"
+            android:layout_marginEnd="18dp"/>
+        <TextView
+            android:id="@+id/Text8"
+            android:text="نائم "
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dim_3xl"
+            android:layout_marginTop="18dp"
+            android:textColor="@color/black"
+            android:layout_marginStart="@dimen/dim_xl"
+            android:layout_marginEnd="18dp"/>
+        <TextView
+            android:id="@+id/Text9"
+            android:text=" المكالمات الطارئة فقط"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dim_3xl"
+            android:layout_marginTop="18dp"
+            android:textColor="@color/black"
+            android:layout_marginStart="@dimen/dim_xl"
+            android:layout_marginEnd="18dp"/>
+        <TextView
+            android:id="@+id/Text10"
+            android:text=" لا أستطيع االتحدث , واتساب فقط"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dim_3xl"
+            android:layout_marginTop="18dp"
+            android:textColor="@color/black"
+            android:layout_marginStart="@dimen/dim_xl"
+            android:layout_marginEnd="18dp"/>
+    </LinearLayout>
+    </ScrollView>
+</RelativeLayout>
